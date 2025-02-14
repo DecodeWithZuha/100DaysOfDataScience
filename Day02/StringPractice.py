@@ -1,3 +1,12 @@
+#you can create a new string with existing string but cannot change the orignal string.
+
+a ="Zuha"
+
+print(a[0])
+a[0] = 'z' #TypeError: 'str' object does not support item assignment
+print(a[0])
+
+
 #Method #01
 name = input(" Enter your name: ")
 Date = input(" Enter Date: ")
@@ -19,3 +28,6 @@ print(letter.replace("<|Name|>", "Zuha Nasir").replace("<|Date|>","14 Feb,2025")
 #What happens if we dont do it in new string
 print(letter.replace("<|Name|>", "Zuha Nasir"))
 print(letter.replace("<|Date|>","14 Feb,2025"))
+
+
+# Every new method applied on string creates a new string.
